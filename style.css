@@ -1,0 +1,70 @@
+body {
+  color: white;
+  font-family: "Mansalva";
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(45deg, rgb(228, 13, 13), rgb(94, 19, 19));
+}
+
+.map-section {
+  background-color: rgb(230, 103, 44);
+  flex-direction: column;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.about-section {
+  color: black;
+  background-color: rgb(245, 245, 220);
+  gap: 2rem;
+
+}
+
+.burger {
+  height: 70%;
+  z-index: 2;
+}
+
+.onion1 {
+  height: 20%; 
+  position: absolute;
+  top: 5%; 
+  left: 13%;
+}
+
+.onion2 {
+  height: 27%; 
+ position: absolute; 
+ bottom: 3%;
+ right: 15%;
+}
+
+/* @media (max-width: 600px) {
+  grid-template-columns: 1fr; 
+} */
