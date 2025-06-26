@@ -20,6 +20,7 @@ p {
 
 section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 3rem;
@@ -32,6 +33,7 @@ section {
 
 .map-section {
   background-color: rgb(230, 103, 44);
+  gap: 2rem;
   flex-direction: column;
 }
 
@@ -42,8 +44,12 @@ section {
 .about-section {
   color: black;
   background-color: rgb(245, 245, 220);
-  gap: 2rem;
-
+  gap: 3em;
+  justify-content: center;
+  align-items: center; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .burger {
@@ -51,18 +57,21 @@ section {
   z-index: 2;
 }
 
-.onion1 {
-  height: 20%; 
+.onion1,
+.onion2 {
+  height: 25%;
+  z-index: 1;
   position: absolute;
-  top: 5%; 
+}
+
+.onion1 {
+  top: 3%;
   left: 13%;
 }
 
 .onion2 {
-  height: 27%; 
- position: absolute; 
- bottom: 3%;
- right: 15%;
+  bottom: 3%;
+  right: 16%;
 }
 
 /* @media (max-width: 600px) {
